@@ -15,10 +15,7 @@ All class related material can be found in corresponding folder/task_data
 * [Lecture 5 (Basics of FDM Printing)](https://github.com/Lupasic/IME_Inno_2023/blob/main/lectures/5/IME_lec5.pdf)
 * [Lecture 6 (Connections: Detachable (Threaded, Keyed, ...); Permanent (Riveting, Welding, ...))](https://github.com/Lupasic/IME_Inno_2023/blob/main/lectures/6/IME_lec6.pdf)
 * [Lecture 7 (Engineering Materials: Steel, Bronze, Aluminum, Titanium, Composites)](https://github.com/Lupasic/IME_Inno_2023/blob/main/lectures/7/IME_lec7.pdf)
-<!-- * [Lecture 5 (Motor sizing (selection))](https://github.com/Lupasic/IME_Inno_2023/blob/main/lectures/5/IME_lec5.pdf)
-* [Lecture 6 (Problems of description and compensation of kinetic friction in robotics)](https://github.com/Lupasic/IME_Inno_2023/blob/main/lectures/6/IME_lec6.pdf)
-* [Lecture 7 (Synthesis of planar mechanisms)](https://github.com/Lupasic/IME_Inno_2023/blob/main/lectures/7/IME_lec7.pdf)
-* [Lecture 10 (Design Thinking and Manufacturing)](https://github.com/Lupasic/IME_Inno_2023/blob/main/lectures/10/IME_lec10.pdf)-->
+* [Lecture 8 (Design Thinking and Manufacturing)](https://github.com/Lupasic/IME_Inno_2023/blob/main/lectures/8/IME_lec8.pdf)
 
 # Lab slides
 * [Lab 1 CAD_DET1 (Solid modeling)](https://github.com/Lupasic/IME_Inno_2023/blob/main/labs/CAD_DET1/IME_CAD_DET1.pdf)
@@ -26,9 +23,7 @@ All class related material can be found in corresponding folder/task_data
  * [Lab 3 CAD_ASM1 (Bottom-Up approach; Basics)](https://github.com/Lupasic/IME_Inno_2023/blob/main/labs/CAD_ASM1/IME_CAD_ASM1.pdf)
 * [Lab 4 CAD_ASM2 (Top - Down approach: WAVE; Assembly Load Options; GOST Naming convection; Common Parts Library; Sequence (<Dis>Assembling animation))](https://github.com/Lupasic/IME_Inno_2023/blob/main/labs/CAD_ASM2/IME_CAD_ASM2.pdf)
 * [Lab 5 CAD_REN1 (Render)](https://github.com/Lupasic/IME_Inno_2023/blob/main/labs/CAD_REN1/IME_CAD_REN1.pdf)
-<!--* [Lab 5 CAE_DYN1 (Introduction to CAE; Animation Designer; Mechatronics Concept Designer; Motion; Measure; Interference; Density; Assign Materials)](https://github.com/Lupasic/IME_Inno_2023/blob/main/labs/CAE_DYN1/IME_CAE_DYN1.pdf)
-* [Lab 6-7 CAE_DYN2 (Motion Analysis, Part 2)](https://github.com/Lupasic/IME_Inno_2023/blob/main/labs/CAE_DYN2/IME_CAE_DYN2.pdf)
-* [Lab 9 MAN1 (How to create such parts?)](https://github.com/Lupasic/IME_Inno_2023/blob/main/labs/MAN1/IME_MAN1.pdf) -->
+* [Lab 6 CAE_DYN1 (Introduction to CAE; Animation Designer; Mechatronics Concept Designer; Motion; Measure; Interference; Density; Assign Materials)](https://github.com/Lupasic/IME_Inno_2023/blob/main/labs/CAE_DYN1/IME_CAE_DYN1.pdf)
 
 # HWs
 * [HW 1 CAD_DET1 (Simple Detail)](https://github.com/Lupasic/IME_Inno_2023/blob/main/HWs/HW_CAD_DET1/IME_HW_CAD_DET1.pdf)
@@ -36,9 +31,7 @@ All class related material can be found in corresponding folder/task_data
 * [HW 3 CAD_ASM1 (Simple Assembly)](https://github.com/Lupasic/IME_Inno_2023/blob/main/HWs/HW_CAD_ASM1/IME_HW_CAD_ASM1.pdf)
 * [HW 4 CAD_ASM2 (Complex Assembly)](https://github.com/Lupasic/IME_Inno_2023/blob/main/HWs/HW_CAD_ASM2/IME_HW_CAD_ASM2.pdf)
 * [HW 5 CAD_REN1 (Render)](https://github.com/Lupasic/IME_Inno_2023/blob/main/HWs/HW_CAD_REN1/IME_HW_CAD_REN1.pdf)
-<!-- * [HW 5 CAE_DYN1 (Inverse Dynamics Problem)](https://github.com/Lupasic/IME_Inno_2023/blob/main/HWs/HW_CAE_DYN1/IME_HW_CAE_DYN1.pdf)
-* [HW 6 CAE_DYN2 (Motion Analysis)](https://github.com/Lupasic/IME_Inno_2023/blob/main/HWs/HW_CAE_DYN2/IME_HW_CAE_DYN2.pdf)
--->
+* [HW 6 CAE_DYN1 (Inverse Dynamics Problem; Rifle simulation)](https://github.com/Lupasic/IME_Inno_2023/blob/main/HWs/HW_CAE_DYN1/IME_HW_CAE_DYN1.pdf)
 
 # For contributors
 
