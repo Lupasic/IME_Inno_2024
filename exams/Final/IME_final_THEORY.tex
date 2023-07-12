@@ -8,6 +8,7 @@
  right=10mm,
  top=10mm,
  bottom=20mm,
+ headheight=75pt
  }
 % \usepackage[utf8x]{inputenc}
 \usepackage{fontspec}
@@ -20,15 +21,15 @@
 \usepackage{floatrow}
 \usepackage{hyperref}
 \usepackage{cleveref}
-\graphicspath{{resources_CAD/}}
+\graphicspath{{resources_THEORY/}}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 
 
 \renewcommand{\headrulewidth}{0pt}
-\fancyhead[C]{}
-\fancyfoot[]{}
+% \fancyhead[C]{}
+% \fancyfoot[]{}
 
 
 \newcommand\pic[1]{(\cref{#1})} %Где нужно сослаться на рисунок
@@ -39,118 +40,116 @@
     urlcolor=cyan,
     }
 
-\newcommand\ttask[2]{
-	\begin{center}
-		\LARGE <<Introduction to Mechanical Engineering>> \\ \textbf{Final Exam} \\ \textit{Theory part} \\ Variant: #1
-	\end{center}
-#2
-}
+    \newcommand\ttask[2]{
+        \begin{center}
+            \LARGE <<Introduction to Mechanical Engineering>> \\ \textbf{Final Exam} \\ \textit{Theory part} \\
+            Question: 1 (8 score) \\ Variant: #1
+        \end{center}
+    #2
+    \newpage
+    }
 
-\def\introTM{Lower and higher kinematic pairs. Examples. Form and forced closed joints. The idea besides calculation mechanism DoF.}
-\def\typeD{Common types of drives (at least 5) Examples. Prof and cons.}
-\def\SPM{Types of synthesis of a mechanism. 3 general ways of solving methods.}
-\def\MS{What the key aspects should we consider during the motor chosing? The general guideline of the motor selection.}
-\def\LJC{What types of detachable connections do you know (at least 4)? Examples. Prof and cons.}
-\def\LJCC{What types of permanent connections do you know (at least 4)? Examples. Prof and cons.}
-\def\LJCCC{Bearings. Types. Prof and cons. How to mount and dismount them. The idea besides locating and floating bearings.}
-\def\CD{Screw types. Multisided screws, prof and cons. Type of drills. Type of holes. How to distinguish them on a blueprints?}
-\def\EM{Stress-strain curve. What the idea besides it? How can we modify it for a material?}
-\def\EMM{Iron - Carbon plot. Why do we need this plot? Aluminum and titanium. Prof and cons.}
-\def\DTM{Types of manufacturing. At least 1 example for each type. Prof and cons.}
-\def\BP{3D printer. How does the printer print (FDM)? The guideline of printing process. The best practices for orienting part on a printer table.}
-\def\SoM{Main difference between Theoretical Mechanics and Strength of Material courses in terms of concept. Common types of loads.}
-\def\FDM{ODE and PDE, difference. Boundary and Initial value problems. The main idea besides Finite Difference and Finite Element Methods.}
 
+    \newcounter{themenumber}
+
+% The preamble ends with the command \begin{document}
 \begin{document}
 \ttask{1}{\begin{enumerate}
-	\item \introTM
-	\item \BP
+    \item What does it mean? You should explain each part of this notation \pic{fig:resources_THEORY/quiz1_task1.png} (4 score).
+    \item Using which 4 basic operations you can design almost any solid part in CAD. Explain your choice with an example (4 score).
+\end{enumerate}
+\begin{figure}[H]
+    \centering\includegraphics[height=3cm,width=1\textwidth,keepaspectratio]{resources_THEORY/quiz1_task1.png}
+    \caption{Variant 1.1}
+    \label{fig:resources_THEORY/quiz1_task1.png}
+\end{figure}}
+
+\ttask{2}{
+\begin{enumerate}
+    \item What the difference between lower and higher kinematic pairs and. Provide examples of both types, using kinematic scheme notation (5 score).
+    \item Draw a kinematic scheme of the mechanism \pic{fig:resources_THEORY/quiz1_task2.png} (3 score).
+\end{enumerate}
+\begin{figure}[H]
+    \centering\includegraphics[height=9cm,width=1\textwidth,keepaspectratio]{resources_THEORY/quiz1_task2.png}
+    \caption{Variant 2.2}
+    \label{fig:resources_THEORY/quiz1_task2.png}
+\end{figure}}
+
+\ttask{3}{
+\begin{enumerate}
+    \item Provide at least 6 types of drives. Prof and cons (8 score).
 \end{enumerate}}
 
-\ttask{2}{\begin{enumerate}
-	\item \typeD
-	\item \SoM
+\ttask{4}{
+\begin{enumerate}
+    \item Why do we need bearings? (2 score)
+    \item Explain how linear bearings works. (2 score)
+    \item How to fix radial bearing on a shaft. At least 2 possible ways. (2 score)
+    \item Tolerances for mounting, why do we need them? (2 score)
 \end{enumerate}}
 
-\ttask{3}{\begin{enumerate}
-	\item \SPM
-	\item \EM
-\end{enumerate}}
+\ttask{5}{
+\begin{enumerate}
+    \item Could you name all highlighted parts from the picture \pic{fig:resources_THEORY/quiz1_task5.png}? (3 score)
+    \item What the difference between bolden and direct extruders. (2 score)
+    \item Could you write the printing process, starting that you have \textit{ideal} CAD model in <<step>> format. (3 score)  
+\end{enumerate}
+\begin{figure}[H]
+    \centering\includegraphics[height=10cm,width=1\textwidth,keepaspectratio]{resources_THEORY/quiz1_task5.png}
+    \caption{Variant 5.1}
+    \label{fig:resources_THEORY/quiz1_task5.png}
+\end{figure}}
 
-\ttask{4}{\begin{enumerate}
-	\item \MS
-	\item \CD
-\end{enumerate}}
+\ttask{6}{
+\begin{enumerate}
+    \item What does stress and strain mean? Stress-strain curve. What the idea besides it? Draw some curve for ductile and brittle material. How can we modify a curve behavior for some particular material? (3 score)
+    \item Why do we need alloying elements? Could you provide at least 1 example? (2 score)
+    \item Iron-Carbon Phase Diagram \pic{fig:resources_THEORY/quiz1_task6.png}. What can you understand from the diagram? (3 score)
+\end{enumerate}
+\begin{figure}[H]
+    \centering\includegraphics[height=8cm,width=1\textwidth,keepaspectratio]{resources_THEORY/quiz1_task6.png}
+    \caption{Variant 6.3}
+    \label{fig:resources_THEORY/quiz1_task6.png}
+\end{figure}}
 
-\ttask{5}{\begin{enumerate}
-	\item \LJC
-	\item \EM
-\end{enumerate}}
+\ttask{7}{
+    \begin{enumerate}
+        \item Could you name each of type connection on the figure \pic{fig:resources_THEORY/final_connections.png}. What the benefits of each of them? (5 score)
+        \item How to connect two shafts together? Why do we need it? (3 score)
+    \end{enumerate}
 
-\ttask{6}{\begin{enumerate}
-	\item \LJCC
-	\item \FDM
-\end{enumerate}}
+    \begin{figure}[H]
+        \begin{subfigure}{0.99\textwidth}
+            \centering\includegraphics[height=8cm,width=1\textwidth,keepaspectratio]{detach.jpg}
+        \end{subfigure}
 
-\ttask{7}{\begin{enumerate}
-	\item \LJCCC
-	\item \FDM
-\end{enumerate}}
+        \begin{subfigure}{0.99\textwidth}
+            \centering\includegraphics[height=8cm,width=1\textwidth,keepaspectratio]{fixed.jpg}
+        \end{subfigure}
 
-\ttask{8}{\begin{enumerate}
-	\item \CD
-	\item \typeD
-\end{enumerate}}
+    \caption{Variant 7.1}
+    \label{fig:resources_THEORY/final_connections.png}
+\end{figure}
+}
 
-\ttask{9}{\begin{enumerate}
-	\item \EM
-	\item \MS
-\end{enumerate}}
+\ttask{8}{
+    \begin{enumerate}
+        \item What the difference between shaft, spindle and axle? Do we really need different words for them? (2 score)
+        \item Screw types. Multiple-Start threads, prof and cons. (1 score)
+        \item Screw drive types (шлицы). Prof and cons. (2 score)
+        \item Type of drills. Type of holes. How to distinguish them on a blueprints? (1 score)
+        \item What the conceptual difference between welding and soldering? Provide the example, where it can be used and why. (2 score)
+    \end{enumerate}
+}
 
-\ttask{10}{\begin{enumerate}
-	\item \EMM
-	\item \LJCC
-\end{enumerate}}
-
-\ttask{11}{\begin{enumerate}
-	\item \DTM
-	\item \introTM
-\end{enumerate}}
-
-\ttask{12}{\begin{enumerate}
-	\item \BP
-	\item \CD
-\end{enumerate}}
-
-\ttask{13}{\begin{enumerate}
-	\item \SoM
-	\item \LJCCC
-\end{enumerate}}
-
-\ttask{14}{\begin{enumerate}
-	\item \FDM
-	\item \LJCCC
-\end{enumerate}}
-
-\ttask{15}{\begin{enumerate}
-	\item \introTM
-	\item \SPM
-\end{enumerate}}
-
-\ttask{16}{\begin{enumerate}
-	\item \typeD
-	\item \LJC
-\end{enumerate}}
-
-\ttask{17}{\begin{enumerate}
-	\item \SPM
-	\item \DTM
-\end{enumerate}}
-
-\ttask{18}{\begin{enumerate}
-	\item \MS
-	\item \FDM
-\end{enumerate}}
-
+\forloop{themenumber}{1}{\value{themenumber} < 13}{        \begin{center}
+    \LARGE <<Introduction to Mechanical Engineering>> \\ \textbf{Final Exam} \\ \textit{Theory part} \\
+    Question: 2 (7 score) \\ Variant: \arabic{themenumber}
+\end{center}
+\begin{figure}[H]
+    \centering\includegraphics[height=10cm,width=1\textwidth,keepaspectratio]{resources_THEORY/MAN1/\arabic{themenumber}.png}
+\end{figure}
+\newpage
+}
 
 \end{document}
