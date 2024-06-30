@@ -94,10 +94,15 @@
 \note{\scriptsize
 }
 
+
+
 \begin{frame}[t]{Plan}
 \framesubtitle{}
 \begin{enumerate}
+    \scriptsize
     \item What do we want to achieve with the renderer?
+    \item CAD vs Polygonal
+    \item What defines the material
     \item How to make a photorealistic rendering.
     \begin{enumerate}
         \item How do we make sure we don't mess up the materials?
@@ -113,7 +118,6 @@
             \item Color/brightness highlighting
         \end{enumerate}
         \item Color balance, brightness
-        \item Controlling the user's eyes with the camera movement and objects in the scene
     \end{enumerate}
 \end{enumerate}
 \end{frame}
@@ -128,6 +132,11 @@
     \end{figure}
 
 \end{frame}
+
+\usebackgroundtemplate{}
+\setbeamercolor{background canvas}{bg=}
+\includepdf[pages=-,fitpaper, linktodoc=true, pagecommand={\section{Mam_Render}\label{pdf:Mam_Render}}]{Mam_Render.pdf}
+\fbckg{fibeamer/figs/common.png}
 
 \begin{frame}[t]{How to make it look nice}
     \framesubtitle{Video}
@@ -206,6 +215,16 @@
         \href{https://disk.yandex.ru/i/aXWXryrDGGdZ0A}{
             \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{practice_render.jpg}}
         \label{fig:practice_render.jpg}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[t]{Invited Lecturer Egor (RUS)}
+    \framesubtitle{Video}
+    \vspace{-0.6cm}
+    \begin{figure}[H]
+        \href{https://disk.yandex.ru/i/g4k_bOkkXyebJA}{
+            \centering\includegraphics[height=6cm,width=1\textwidth,keepaspectratio]{egor_render_video.png}}
+        \label{fig:egor_render_video.png}
     \end{figure}
 \end{frame}
 
